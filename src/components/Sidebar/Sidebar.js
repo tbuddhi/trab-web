@@ -27,9 +27,12 @@ const SidebarNav = styled.nav`
     transition: transform 0.4s ease-in-out;
     border-top-right-radius: 160px;
     align-items: center;
+    z-index: 10;
 
     @media (max-width: 575.98px) {
         width: 90%;
+        height: 100vh;
+        top: 0;
     }
 `
 
