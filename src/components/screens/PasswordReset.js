@@ -59,6 +59,10 @@ const Card = styled.div`
         text-align: center;
         color: #545454;
         font-size: .8rem;
+
+        @media (max-width: 991.98px) {
+            width: 80%;
+        }
     }
     div.input-wrapper{
         margin-top: 3rem;

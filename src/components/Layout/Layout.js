@@ -18,7 +18,7 @@ const ContentWrapper = styled.div`
     @media (max-width: 991.98px) {
         margin-top: 96px;
     }
-    
+
     @media (max-width: 575.98px) {
         margin-top: 125px;
     }
@@ -31,6 +31,10 @@ const ContentWrapper = styled.div`
 
         @media (max-width: 767.98px) {
             padding-left: 50px;
+        }
+
+        @media (max-width: 575.98px) {
+            padding-left: .5rem;
         }
     }
 `
