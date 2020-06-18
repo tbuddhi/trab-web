@@ -14,6 +14,16 @@ const ContentWrapper = styled.div`
     display: flex;
     margin-top: 54px;
 
+    
+    @media (max-width: 991.98px) {
+        margin-top: 96px;
+    }
+    
+    @media (max-width: 575.98px) {
+        margin-top: 125px;
+    }
+
+
     main{
         flex: 1;
         padding-left: 180px;

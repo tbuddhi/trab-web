@@ -159,7 +159,7 @@ const PasswordReset = () => {
                 <span className="screen-path">Dashboard / Inside The App</span>
             </BreadCrumb>
             <Card>
-                <img src={UserArt} />
+                <img src={UserArt} alt="Profile"/>
                 <h3 className="title">Inside The App</h3>
                 <p className="para">Enter the new password then your password will change! Don't forget again.</p>
 

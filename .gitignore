@@ -1,0 +1,9 @@
+node_modules
+/dist
+
+# Log files
+package-lock.json*
+
+# Editor directories and files
+.idea
+.vscodes

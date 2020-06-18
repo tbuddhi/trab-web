@@ -19,6 +19,11 @@ const TopNav = styled.div`
     border-bottom: 1px solid #dae8ef;
     background-color: white;
 
+    @media (max-width: 991.98px) {
+        height: auto;
+        max-height: 125px;
+    }
+
     ul{
         display: flex;
         flex-direction: row-reverse;
@@ -64,6 +69,7 @@ const BrandLogo = styled.div`
 
     @media (max-width: 575.98px) {
         margin-left: .5rem;
+        align-self: auto;
     }
 `
 const SearchInput = styled.div`
@@ -71,6 +77,11 @@ const SearchInput = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
     align-items: center;
+
+    @media (max-width: 991.98px) {
+        padding-right: 1rem;
+        margin-bottom: .5rem;
+    }
     
     button{
         position: relative;
@@ -109,13 +120,17 @@ const HeaderInput = styled.input`
     &:focus{
         outline: none;
     }
-
 `
 
 const DateTime = styled.div`
     display: flex;
     padding-left: 2rem;
     padding-right: 2rem;
+
+    @media (max-width: 991.98px) {
+        margin-bottom: .5rem;
+        padding-right: 1rem;
+    }
 
     input{
         text-align: center;
@@ -129,13 +144,13 @@ const Header = () => {
         <header>
             <TopNav>
                 <BrandLogo>
-                    <img src={Logo} />
+                    <img src={Logo} alt="Logo"/>
                 </BrandLogo>
                 <ul>
                     <li>
                         <UserTag href="">
                             <span>Allie Sherman</span>
-                            <img src={UserImg} />
+                            <img src={UserImg} alt="Profile" />
                         </UserTag>
                     </li>
                     <li>

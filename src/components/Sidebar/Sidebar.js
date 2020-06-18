@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import { SideNavItems } from '../SideNavItems'
 import UserImg from '../../images/profile-image.jpg'
@@ -46,6 +46,10 @@ const ToggleButton = styled.div`
     align-items: center;
     justify-content: center;
     color: white;
+    
+    @media (max-width: 991.98px) {
+        top: 85px;
+    }
 `
 
 const UserProfile = styled.a`
@@ -131,7 +135,7 @@ const Sidebar = () => {
             <Burger open={open} setOpen={setOpen}/>
             <SidebarNav className open={open} onClick={() => setOpen(!open)}>
                 <UserProfile href="">
-                    <img src={UserImg} />                    
+                    <img src={UserImg} alt="Profile" />                    
                     <span><b>Allie Sherman</b></span>
                     <span>UI/UX Engineer</span>
                 </UserProfile>
