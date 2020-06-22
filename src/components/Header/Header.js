@@ -18,6 +18,7 @@ const TopNav = styled.div`
     justify-content: flex-end;
     border-bottom: 1px solid #dae8ef;
     background-color: white;
+    align-items: center;
 
     @media (max-width: 991.98px) {
         height: auto;
@@ -69,7 +70,8 @@ const BrandLogo = styled.div`
 
     @media (max-width: 575.98px) {
         margin-left: .5rem;
-        align-self: auto;
+        margin-top: .5rem;
+        align-self: start;
     }
 `
 const SearchInput = styled.div`
